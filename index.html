@@ -3,42 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Validator Name</title>
+  <title>Buffalo Steve Validator</title>
   <style>
+    /* General Page Styles */
     body {
       font-family: Arial, sans-serif;
-      background: #f2f2f2;
+      background: #000;
+      color: #fff;
       margin: 0;
       padding: 0;
+      min-height: 100vh;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      flex-direction: column;
     }
+    
+    /* Container for Centering Content */
     .container {
-      background: #fff;
-      padding: 40px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      max-width: 500px;
-      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      min-height: 100vh;
+      box-sizing: border-box;
     }
+    
+    /* Logo Styles: Adjust the width as needed */
     .logo {
-      max-width: 150px;
+      width: 300px; /* Increased logo size */
       margin-bottom: 20px;
     }
+    
+    /* Heading & Tagline */
     h1 {
       margin-bottom: 10px;
       font-size: 2em;
-      color: #333;
     }
+    
     p.tagline {
       font-size: 1.1em;
-      color: #666;
       margin-bottom: 20px;
     }
-    a.contact {
+    
+    /* Spacer to Push Contact Section Down */
+    .spacer {
+      flex: 1;
+    }
+    
+    /* Contact Section */
+    .contact-container {
+      width: 100%;
+      text-align: center;
+      margin-top: auto; /* Ensures this section stays at the bottom */
+      padding-bottom: 20px;
+    }
+    
+    .contact {
       display: inline-block;
       padding: 10px 20px;
       background: #007acc;
@@ -46,21 +68,27 @@
       text-decoration: none;
       border-radius: 4px;
     }
-    a.contact:hover {
+    
+    .contact:hover {
       background: #005fa3;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Replace 'logo.png' with your actual logo file -->
-    <img src="sv logo.png" alt="Validator Logo" class="logo" />
-    <h1>Your Validator Name</h1>
-    <p class="tagline">Your catchy tagline goes here.</p>
-    <p>
-      Have questions? 
-      <a href="mailto:contact@example.com" class="contact">Get in Touch</a>
-    </p>
+    <!-- Updated logo file name -->
+    <img src="sv-logo.png" alt="Buffalo Steve Validator Logo" class="logo" />
+    <h1>Buffalo Steve Validator</h1>
+    <p class="tagline">Trampeding TradFi into the past</p>
+    
+    <!-- Spacer pushes the contact section to the bottom -->
+    <div class="spacer"></div>
+    
+    <div class="contact-container">
+      <p>Have questions? 
+        <a href="mailto:contact@example.com" class="contact">Get in Touch</a>
+      </p>
+    </div>
   </div>
 </body>
 </html>
